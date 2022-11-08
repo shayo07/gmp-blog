@@ -1,0 +1,186 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block btitle %}
+{% endblock %}
+
+{% block content %}
+
+
+	<div class="first-widget parallax" id="blogId">
+		<div class="parallax-overlay">
+			<div class="container pageTitle">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<h2 class="page-title">{{ o.category }}-VIDEO TUTORIALS</h2>
+					</div> <!-- /.col-md-6 -->
+					
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.parallax-overlay -->
+	</div> <!-- /.pageTitle -->
+
+	<div class="container">	
+		
+		<div class="row">
+			<div class="col-md-8 blog-posts">
+			
+				{% for o in obj %}
+				<div class="row">
+					<div class="col-md-8">
+						<div class="post-blog">
+							<div class="blog-image">
+								<img src="{{ o.image1.url }}" alt="">
+							</div> <!-- /.blog-image -->
+							<div class="blog-content">
+								
+								<h3>{{ o.video_name }}</h3>
+								<h4>Video category</h4>
+								<p>{{ o.category }}</p>
+                                <h4>Realeased:</h4>
+								<p>{{ o.year_released }}</p>
+								<br/>
+								<h4>DOWNLOAD FILE</h4>
+								<a href=" " download="{{o.file}}">download link1 </a>
+								<br/>
+								<a href="{{ o.link }} ">download link2</a>
+								<br/>
+								<p>Posted at:- {{ o.date_posted }}</p>
+							</div> <!-- /.blog-content -->
+						</div> <!-- /.post-blog -->
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+
+			{% endfor %}
+
+
+				<div class="row">
+					<div class="col-md-12">
+						<div id="blog-author" class="clearfix">
+                            <a href="#" class="blog-author-img pull-left">
+                                <img src="{% static 'images/includes/author.png' %}" alt="">
+                            </a>
+                            <div class="blog-author-info">
+			
+									<h3 class="service-title">Any problem with your device</h3>
+									<p>Check <a rel="nofollow" href="http://fontawesome.io/icons/" target="_blank">Gmp-solutions</a> for your suitable solutions. Example: frp-bypass, firmwares installations and many more</p>
+								</div> <!-- /.service-cnt-wrap -->
+							 
+                        </div>
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+
+				<div class="row">
+					<div class="col-md-12">
+                        <div id="blog-comments" class="blog-post-comments">
+                            <h3><b>Comments</b></h3>
+                            <div class="blog-comments-content">
+								{% for c in obj2 %}
+                                <div class="media">
+                                    <div class="pull-left">
+                                        
+                                    </div>
+									
+                                    <div class="media-body">
+                                        <div class="media-heading">
+                                        	<h4>{{ c.email }}</h4> 
+                                        	<a href="#"><span>posted:</span><span>{{ c.date_posted }}</span></a>
+                                        </div>
+                                        <p>{{ c.comment }}</p>
+                                    </div>
+									
+                                </div>
+								{% endfor %}
+                            </div> <!-- /.blog-comments-content -->
+                        </div> <!-- /.blog-post-comments -->
+                    </div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+				<div class="row">
+                    <div class="col-md-12">
+                        <div class="comment-form">
+                            <h3>Leave a comment</h3>
+                            <div class="widget-inner">
+                            	<form action="" method="post">	
+									{% csrf_token %}
+                                  <div class="row">
+									<div class="col-md-6">
+                                        <p>
+                                            <label for="email-id">video  you are commenting to:</label>
+                                            {{ form.torrent_name }}
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            <label for="email-id">Email Address:</label>
+                                            {{ form.email }}
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>
+                                            <label for="comment">Your comment:</label>
+                                           {{ form.comment }}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="submit"  value="Submit Comment" >
+                                    </div>
+                                </div>
+                                </form>
+								
+
+                            </div> <!-- /.widget-inner -->
+                        </div> <!-- /.widget-main -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+			</div> <!-- /.col-md-8 -->
+
+			<div class="col-md-4">
+				<div class="sidebar">
+					<div class="sidebar-widget">
+						<h5 class="widget-title">Recent Posts</h5>
+						<h6 class="widget-title">Video Torrents</h6>
+						{% for b in all %}
+						<div class="last-post clearfix">
+							<div class="thumb pull-left">
+								<a href="#"><img src="{{ b.image1.url }}" alt=""></a>
+								<span>released: {{ b.year_released }}</span>
+								<h4><a href="#">video name: {{ b.video_name }}</a></h4>
+								<h5>category: {{ b.category }}</h5>
+							</div>
+							
+						</div> <!-- /.last-post -->
+						{% endfor %}
+					</div> <!-- /.sidebar-widget -->
+					<div class="sidebar-widget">
+						<h5 class="widget-title">Categories</h5>
+						<div class="row categories">
+							<div class="col-md-4">
+								<ul>
+									<li><a href="#">Standard</a></li>
+									<li><a href="#">Audio</a></li>
+									<li><a href="#">Video</a></li>
+									<li><a href="#">Branding</a></li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul>
+									<li><a href="#">iOS Design</a></li>
+									<li><a href="#">Business</a></li>
+								</ul>
+							</div>
+						</div> <!-- /.row -->
+					</div> <!-- /.sidebar-widget -->
+					
+				</div> <!-- /.sidebar -->
+			</div> <!-- /.col-md-4 -->
+
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->	
+
+
+
+{% endblock %}

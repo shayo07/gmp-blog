@@ -1,0 +1,88 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block btitle %}
+
+{% endblock %}
+
+
+
+{% block content %}
+
+	<div class="first-widget parallax" id="blog">
+		<div class="parallax-overlay">
+			<div class="container pageTitle">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<h2 class="page-title">ADD DEVICE</h2>
+					</div> <!-- /.col-md-6 -->
+					
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.parallax-overlay -->
+	</div> <!-- /.pageTitle -->
+
+	<div class="container  " >	
+		
+
+			
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="comment-form">
+						
+						<div class="widget-inner">
+							<form action="" method="post" enctype="multipart/form-data">	
+								{% csrf_token %}
+							  <div class="row">
+								<div class="col-md-6">
+									<p>
+										<label for="email-id">Device name:</label>
+										{{ form.name }}
+									</p>
+								</div>
+								<div class="col-md-6">
+									<p>
+										<label for="email-id">Type/model:</label>
+										{{ form.type }}
+									</p>
+								</div>
+                                <div class="col-md-6">
+									<p>
+										<label for="email-id">description:</label>
+										{{ form.description }}
+									</p>
+								</div>
+                                <div class="col-md-6">
+									<p>
+										<label for="email-id">image1:</label>
+										{{ form.image1 }}
+									</p>
+								</div>
+                                <div class="col-md-6">
+									<p>
+										<label for="email-id">image2:</label>
+										{{ form.image2 }}
+									</p>
+								</div>
+							   
+							</div>
+							
+							<div class="row">
+								<div class="col-md-12">
+									<button type="submit" style="padding: 9px;">add device</button>
+								</div>
+							</div>
+							</form>
+							
+
+						</div> <!-- /.widget-inner -->
+					</div> <!-- /.widget-main -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->	
+
+
+	
+{% endblock %}

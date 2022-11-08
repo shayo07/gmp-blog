@@ -1,0 +1,219 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block btitle %}
+
+{% endblock %}
+
+
+
+{% block content %}
+
+	<div class="first-widget parallax" id="blog">
+		<div class="parallax-overlay">
+			<div class="container pageTitle">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<h2 class="page-title">FRP-BYPASS</h2>
+					</div> <!-- /.col-md-6 -->
+					
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.parallax-overlay -->
+	</div> <!-- /.pageTitle -->
+
+	<div class="container">	
+		<div class="row">
+
+			<div class="col-md-8 blog-posts">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="archive-wrapper">
+							<h3 class="archive-title">Launch to Android Apps</h3>
+							<ul class="archive-list">
+                                
+								
+									<li><a href="intent://com.sec.android.app.samsungapps/#Intent;scheme=android-app;end" data-wpel-link="internal"> Open <img src="https://vnrom.net/wp-content/uploads/2022/07/galaxy-store.png" alt="Galaxy Store"><strong><mark style="background-color: rgba(0, 0, 0, 0);" class="has-inline-color has-black-color"> Galaxy Store</mark></strong></a>
+									</li>
+									<br>
+									<li><a href="intent://com.google.android.googlequicksearchbox/#Intent;scheme=android-app;end" data-wpel-link="internal"> Open <img src="https://vnrom.net/wp-content/uploads/2022/07/google-search.png" alt="Google Quick Search Box"><strong><mark style="background-color: rgba(0, 0, 0, 0);" class="has-inline-color has-black-color"> Google Quick Search Box</mark></strong></a>
+									</li>
+									<br>
+									<li><a href="intent://com.android.settings/#Intent;scheme=android-app;end" data-wpel-link="internal"> Open <img src="https://vnrom.net/wp-content/uploads/2022/07/settings.png" alt="Setting App"><strong><mark style="background-color: rgba(0, 0, 0, 0);" class="has-inline-color has-black-color"> Setting</mark></strong></a>
+									</li>
+									<br>
+									<li><a href="intent://com.google.android.gms/#Intent;scheme=promote_smartlock_scheme;end" data-wpel-link="internal"> Open <img src="https://vnrom.net/wp-content/uploads/2022/07/screen-smartlock.png" alt="Screen Smartlock"><mark style="background-color: rgba(0, 0, 0, 0);" class="has-inline-color has-black-color"><strong> Screen Smartlock</strong></mark></a>
+									</li>
+									<br>
+									<li><a href="intent://com.sec.android.app.myfiles/#Intent;scheme=android-app;end" data-wpel-link="internal"> Open <img src="https://vnrom.net/wp-content/uploads/2022/07/samsung-my-file.png" alt="Samsung My Files"><strong><mark style="background-color: rgba(0, 0, 0, 0);" class="has-inline-color has-black-color"> Samsung My Files</mark></strong></a>
+									</li>
+									<br>
+									<li><a href="intent://com.google.android.youtube/#Intent;scheme=android-app;end" data-wpel-link="internal"> Open <img src="https://vnrom.net/wp-content/uploads/2022/07/youtube.png" alt="Youtube"><strong><mark style="background-color: rgba(0, 0, 0, 0);" class="has-inline-color has-black-color"> Youtube</mark></strong></a>
+									</li>
+									<br>
+									<li><a href="intent://com.android.chrome/#Intent;scheme=android-app;end" data-wpel-link="internal"> Open <img src="https://vnrom.net/wp-content/uploads/2022/07/chrome.png" alt="Chrome"><strong><mark style="background-color: rgba(0, 0, 0, 0);" class="has-inline-color has-black-color"> Chrome</mark></strong></a>
+									</li>
+									<br>
+									<li><a href="intent://com.rrivenllc.shieldx/#Intent;scheme=android-app;end" data-wpel-link="internal"> Open <img src="https://vnrom.net/wp-content/uploads/2022/07/alliance-shield.png" alt="Alliance Shield"> <strong><mark style="background-color: rgba(0, 0, 0, 0);" class="has-inline-color has-black-color">Alliance Shield</mark></strong></a>
+									</li>
+									<br>
+									<li><a href="https://galaxy.store/setting" data-wpel-link="external" target="_blank" rel="external noopener noreferrer"> Open <img src="https://vnrom.net/wp-content/uploads/2022/07/android-hidden-settings.png"><strong><mark style="background-color: rgba(0, 0, 0, 0);" class="has-inline-color has-black-color"> Android Hidden Settings</mark></strong></a>
+									</li>
+									<br>
+									<li><a href="intent://com.google.android.gsf.login.LoginActivity/#Intent;scheme=android-app;end" data-wpel-link="internal"> Open <img src="https://vnrom.net/wp-content/uploads/2022/07/google-search.png"><strong><mark style="background-color: rgba(0, 0, 0, 0);" class="has-inline-color has-black-color"> Login Account</mark></strong></a>
+									</li>
+									<br>
+									<li><a href="intent://com.sec.android.app.launcher/#Intent;scheme=android-app;end" data-wpel-link="internal"> Open <img src="https://vnrom.net/wp-content/uploads/2022/07/home-launcher.png"><strong><mark style="background-color: rgba(0, 0, 0, 0);" class="has-inline-color has-black-color"> Home Launcher</mark></strong></a></li>
+								
+
+
+                            </ul>
+                            <h3 class="archive-title">Extra Packages for installation.:</h3>
+                            <ul class="archive-list">
+								{% for v in obj1 %}
+                                <li>
+									<p>Device name: <b>{{ v.device_name }}</b></p>
+									<p>Description: <b>{{ v.description }}</b></p>
+									<p>install: <a href="" download="{{ v.file }}">download link1</a> </p>
+									<p>install: <a href="{{ v.link }}" >download link2</a> </p>
+									<p>Installation guide:</p>
+									<textarea name="" id="" cols="30" rows="5" disabled >
+										{{ v.installation_guide }}
+									</textarea>
+									<p>diagramatical representation:</p>
+									
+									<div>
+										<img  src="{{ v.image1.url }}" alt="" style="width: 80%; padding-bottom: 20px;">
+									</div>
+									<div>
+										<img src="{{ v.image2.url }}" alt="" style="width: 80%; padding-bottom: 20px;" >
+									</div>
+									{% if v.image3 %}
+									<div>
+										<img src="{{ v.image3.url }}" alt="" style="width: 80%; padding-bottom: 20px;" >
+									</div>
+									
+									{% endif  %}
+								</li>
+								{% endfor %}
+                            </ul>
+                           
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+			  </div> <!-- /.col-md-8 -->
+		     </div>
+
+			  <div class="col-md-4">
+				<div class="sidebar">
+					<div class="sidebar-widget">
+						<h5 class="widget-title">Recent Posts</h5>
+						<h6 class="widget-title">Firmware and frp bypass files.</h6>
+						{% for b in all %}
+						<div class="last-post clearfix">
+							<div class="thumb pull-left">
+								<a href="#"><img src="{{ b.image1.url }}" alt=""></a>
+								<span>24 February 2084</span>
+								<h4><a href="#">phone: {{ b.name }}</a></h4>
+								<h5>model: {{ b.type }}</h5>
+							</div>
+							
+						</div> <!-- /.last-post -->
+						{% endfor %}
+					</div> <!-- /.sidebar-widget -->
+					<div class="sidebar-widget">
+						<h5 class="widget-title">Categories</h5>
+						<div class="row categories">
+							<div class="col-md-4">
+								<ul>
+									<li><a href="#">Standard</a></li>
+									<li><a href="#">Audio</a></li>
+									<li><a href="#">Video</a></li>
+									<li><a href="#">Branding</a></li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul>
+									<li><a href="#">iOS Design</a></li>
+									<li><a href="#">Business</a></li>
+								</ul>
+							</div>
+						</div> <!-- /.row -->
+					</div> <!-- /.sidebar-widget -->
+					
+				</div> <!-- /.sidebar -->
+			</div> <!-- /.col-md-4 -->
+		
+			<div class="row">
+				<div class="col-md-12">
+					<div id="blog-comments" class="blog-post-comments">
+						<h3><b>Comments</b></h3>
+						<div class="blog-comments-content">
+							{% for c in comments %}
+							<div class="media">
+								<div class="pull-left">
+									
+								</div>
+								
+								<div class="media-body">
+									<div class="media-heading">
+										<h4>{{ c.email }}</h4> 
+										<a href="#"><span>6 weeks ago</span><span>Reply</span></a>
+									</div>
+									<p>{{ c.comment }}</p>
+								</div>
+								
+							</div>
+							{% endfor %}
+						</div> <!-- /.blog-comments-content -->
+					</div> <!-- /.blog-post-comments -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+
+			<div class="row">
+				<div class="col-md-8">
+					<div class="comment-form">
+						<h3>Leave a comment</h3>
+						<div class="widget-inner">
+							<form action="" method="post">	
+								{% csrf_token %}
+							  <div class="row">
+								<div class="col-md-6">
+									<p>
+										<label for="email-id">Phone you are commenting to:</label>
+										{{ form.name }}
+									</p>
+								</div>
+								<div class="col-md-6">
+									<p>
+										<label for="email-id">Email Address:</label>
+										{{ form.email }}
+									</p>
+								</div>
+							   
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<p>
+										<label for="comment">Your comment:</label>
+									   {{ form.comment }}
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<input type="submit"  value="Submit Comment" >
+								</div>
+							</div>
+							</form>
+							
+
+						</div> <!-- /.widget-inner -->
+					</div> <!-- /.widget-main -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->	
+
+
+	
+{% endblock %}

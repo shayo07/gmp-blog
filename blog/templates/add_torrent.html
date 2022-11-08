@@ -1,0 +1,94 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block btitle %}
+
+{% endblock %}
+
+
+
+{% block content %}
+
+	<div class="first-widget parallax" id="blog">
+		<div class="parallax-overlay">
+			<div class="container pageTitle">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<h2 class="page-title">ADD VIDEO TORRENT</h2>
+					</div> <!-- /.col-md-6 -->
+					
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.parallax-overlay -->
+	</div> <!-- /.pageTitle -->
+
+	<div class="container  " >	
+		
+
+			
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="comment-form">
+						
+						<div class="widget-inner">
+							<form action="" method="post" enctype="multipart/form-data">	
+								{% csrf_token %}
+							  <div class="row">
+								<div class="col-md-6">
+									<p>
+										<label for="email-id">Video name:</label>
+										{{ form.video_name }}
+									</p>
+								</div>
+								<div class="col-md-6">
+									<p>
+										<label for="email-id">category:</label>
+										{{ form.category }}
+									</p>
+								</div>
+                                <div class="col-md-6">
+									<p>
+										<label for="email-id">year_released:</label>
+										{{ form.year_released }}
+									</p>
+								</div>
+                                <div class="col-md-6">
+									<p>
+										<label for="email-id">file:</label>
+										{{ form.file }}
+									</p>
+								</div>
+								<div class="col-md-6">
+									<p>
+										<label for="email-id">link:</label>
+										{{ form.link }}
+									</p>
+								</div>
+                                <div class="col-md-6">
+									<p>
+										<label for="email-id">image:</label>
+										{{ form.image1 }}
+									</p>
+								</div>
+							   
+							</div>
+							
+							<div class="row">
+								<div class="col-md-12">
+									<button type="submit" style="padding: 9px;">add torrent</button>
+								</div>
+							</div>
+							</form>
+							
+
+						</div> <!-- /.widget-inner -->
+					</div> <!-- /.widget-main -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->	
+
+
+	
+{% endblock %}

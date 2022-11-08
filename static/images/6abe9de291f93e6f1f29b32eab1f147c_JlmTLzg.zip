@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>gmsolution</title>
+    <meta name="keywords" content="#">
+	<meta name="description" content="#">
+    <meta name="author" content="templatemo">
+    <!-- 
+	Medigo Template
+	http://www.templatemo.com/preview/templatemo_460_medigo
+    -->
+
+	<!-- Google Fonts -->
+	<link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700itali" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,500,200,100,600" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="/static/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/misc.css">
+	<link rel="stylesheet" href="/static/css/orange-scheme.css">
+	
+	<!-- JavaScripts -->
+	<script src="/static/js/jquery-1.10.2.min.js"></script>
+	<script src="/static/js/jquery-migrate-1.2.1.min.js"></script>
+
+	<link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+
+</head>
+
+
+<body>
+	<div class="responsive_menu">
+        <ul class="main_menu">
+            <li><a href="/home/">Home</a></li>
+            <li><a href="#">Portfolio</a>
+            	<ul>
+					<li class="active"><a href="/home/">Home</a></li>
+					<li><a href="#">FRP BYPASS</a>
+						<ul>
+							<li><a href="#">SAMSUNG</a></li>
+							<li><a href="#">TECNO</a></li>
+							<li><a href="#">INFINIX</a></li>
+							<li><a href="#">NOKIA</a></li>
+							<li><a href="#">ITEL</a></li>
+						</ul>	
+					</li>
+					<li><a href="#">FIRMWARE</a>
+						<ul>
+							<li><a href="#">Hollywood</a></li>
+							<li><a href="#">Bollywood</a></li>
+							<li><a href="#">Nollywood</a></li>
+						</ul>
+					</li>
+					<li><a href="#">CRACKED TOOLS</a>
+						<ul>
+							<li><a href="#">Hollywood</a></li>
+							<li><a href="#">Bollywood</a></li>
+							<li><a href="#">Nollywood</a></li>
+						</ul>
+					</li>
+					<li><a href="#">VIDEO TORRENTS</a>
+						<ul>
+							<li><a href="#">Hollywood</a></li>
+							<li><a href="#">Bollywood</a></li>
+							<li><a href="#">Nollywood</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Contact</a></li>
+        </ul> <!-- /.main_menu -->
+    </div> <!-- /.responsive_menu -->
+
+
+
+	<header class="site-header clearfix">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<div class="pull-left logo">
+						<a href="#">
+							<img src="/static/images/logo.png" alt="Medigo by templatemo">
+						</a>
+					</div>	<!-- /.logo -->
+
+					<div class="main-navigation pull-right">
+
+						<nav class="main-nav visible-md visible-lg">
+							<ul class="sf-menu">
+								<li class="active"><a href="/home/">Home</a></li>
+					            <li><a href="#">FRP BYPASS</a>
+									<ul>
+										<li><a href="#">SAMSUNG</a></li>
+										<li><a href="#">TECNO</a></li>
+										<li><a href="#">INFINIX</a></li>
+										<li><a href="#">NOKIA</a></li>
+										<li><a href="#">ITEL</a></li>
+									</ul>	
+					            </li>
+								<li><a href="#">FIRMWARE</a>
+									<ul>
+										<li><a href="/home/view_firmwares/SAMSUNG/">SAMSUNG</a></li>
+										<li><a href="/home/view_firmwares/TECNO/">TECNO</a></li>
+										<li><a href="#">INFINIX</a></li>
+										<li><a href="#">NOKIA</a></li>
+										<li><a href="#">ITEL</a></li>
+									</ul>
+					            </li>
+								<li><a href="#">CRACKED TOOLS</a>
+					            	
+					            </li>
+					            <li><a href="#">VIDEO TORRENTS</a>
+									<ul>
+										<li><a href="#">Hollywood</a></li>
+										<li><a href="#">Bollywood</a></li>
+                                        <li><a href="#">Nollywood</a></li>
+									</ul>
+					            </li>
+					            <li><a href="#">Contact</a></li>
+							</ul> <!-- /.sf-menu -->
+						</nav> <!-- /.main-nav -->
+
+						<!-- This one in here is responsive menu for tablet and mobiles -->
+					    <div class="responsive-navigation visible-sm visible-xs">
+					        <a href="#" class="menu-toggle-btn">
+					            <i class="fa fa-bars"></i>
+					        </a>
+					    </div> <!-- /responsive_navigation -->
+
+					</div> <!-- /.main-navigation -->
+
+				</div> <!-- /.col-md-12 -->
+
+			</div> <!-- /.row -->
+
+		</div> <!-- /.container -->
+	</header> <!-- /.site-header -->
+
+
+
+
+
+			
+
+
+	<div class="first-widget parallax" id="blogId">
+		<div class="parallax-overlay">
+			<div class="container pageTitle">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<h2 class="page-title">SAMSUNG</h2>
+					</div> <!-- /.col-md-6 -->
+					
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.parallax-overlay -->
+	</div> <!-- /.pageTitle -->
+
+	<div class="container">	
+		
+		<div class="row">
+			<div class="col-md-8 blog-posts">
+				
+				<div class="row">
+					<div class="col-md-8">
+						<div class="post-blog">
+							<div class="blog-image">
+								<img src="/images/1_LKbvfku.png" alt="">
+							</div> <!-- /.blog-image -->
+							<div class="blog-content">
+								
+								<h3>SAMSUNG-s6-edge</h3>
+								<h4>File descriptions</h4>
+								<p>release 2016 , version 9.0.1 to latest</p>
+								<br/>
+								<h4>DOWNLOAD FILE</h4>
+								<a href=" " download="6abe9de291f93e6f1f29b32eab1f147c_JlmTLzg.zip">download</a>
+								<br/>
+								<div class="tag-items">
+									<h4>Installation Guide</h4>
+                                    <span class="small-text">steps:</span>
+                                    1. FHJBFJHVB,FDFM,NV ,DJHBFFHBVDFM D,FVHF
+2. FGHBRYVBD FYRGH HYRLYBRL
+                                </div>
+							</div> <!-- /.blog-content -->
+						</div> <!-- /.post-blog -->
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+
+				
+				<div class="row">
+					<div class="col-md-8">
+						<div class="post-blog">
+							<div class="blog-image">
+								<img src="/images/3.png" alt="">
+							</div> <!-- /.blog-image -->
+							<div class="blog-content">
+								
+								<h3>SAMSUNG-s6-edge</h3>
+								<h4>File descriptions</h4>
+								<p>release 2016 , version 9.0.1 to latest</p>
+								<br/>
+								<h4>DOWNLOAD FILE</h4>
+								<a href=" " download="6abe9de291f93e6f1f29b32eab1f147c_njMOWmu.zip">download</a>
+								<br/>
+								<div class="tag-items">
+									<h4>Installation Guide</h4>
+                                    <span class="small-text">steps:</span>
+                                    1. FKHRYUGRFBYU4FHB.
+2. RFGHVKRVUYRHBUR4Y
+                                </div>
+							</div> <!-- /.blog-content -->
+						</div> <!-- /.post-blog -->
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+
+				
+
+
+				<div class="row">
+					<div class="col-md-12">
+						<div id="blog-author" class="clearfix">
+                            <a href="#" class="blog-author-img pull-left">
+                                <img src="/static/images/includes/author.png" alt="">
+                            </a>
+                            <div class="blog-author-info">
+                                <h4 class="author-name"><a href="#">Candy Sharp</a></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod, doloremque, quia cum maiores commodi consequatur dolore et dolores omnis officiis minus dolor ex quae incidunt veritatis.</p>
+                            </div>
+                        </div>
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+
+				<div class="row">
+					<div class="col-md-12">
+                        <div id="blog-comments" class="blog-post-comments">
+                            <h3><b>Comments</b></h3>
+                            <div class="blog-comments-content">
+								
+                                <div class="media">
+                                    <div class="pull-left">
+                                        
+                                    </div>
+									
+                                    <div class="media-body">
+                                        <div class="media-heading">
+                                        	<h4>shayody@gmail.com</h4> 
+                                        	<a href="#"><span>6 weeks ago</span><span>Reply</span></a>
+                                        </div>
+                                        <p>nigga this file is too large</p>
+                                    </div>
+									
+                                </div>
+								
+                                <div class="media">
+                                    <div class="pull-left">
+                                        
+                                    </div>
+									
+                                    <div class="media-body">
+                                        <div class="media-heading">
+                                        	<h4>leodigatarimo19@gmail.com</h4> 
+                                        	<a href="#"><span>6 weeks ago</span><span>Reply</span></a>
+                                        </div>
+                                        <p>oa bro hili file ni shobooo.......</p>
+                                    </div>
+									
+                                </div>
+								
+                            </div> <!-- /.blog-comments-content -->
+                        </div> <!-- /.blog-post-comments -->
+                    </div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+				<div class="row">
+                    <div class="col-md-12">
+                        <div class="comment-form">
+                            <h3>Leave a comment</h3>
+                            <div class="widget-inner">
+                            	<form action="" method="post">	
+									<input type="hidden" name="csrfmiddlewaretoken" value="bdUYKtRyLY1MMvASG6EkULV7hpOPMmcbmgU4zhCk9xXYjz9u8qUKMmbeLCtVsBd0">
+                                  <div class="row">
+									<div class="col-md-6">
+                                        <p>
+                                            <label for="email-id">Phone you are commenting to:</label>
+                                            <select name="d_name" required id="id_d_name">
+  <option value="" selected>---------</option>
+
+  <option value="SAMSUNG">SAMSUNG</option>
+
+  <option value="TECNO">TECNO</option>
+
+</select>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            <label for="email-id">Email Address:</label>
+                                            <input type="text" name="email" maxlength="100" required id="id_email">
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>
+                                            <label for="comment">Your comment:</label>
+                                           <input type="text" name="comment" maxlength="200" id="id_comment">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="submit"  value="Submit Comment" >
+                                    </div>
+                                </div>
+                                </form>
+								
+
+                            </div> <!-- /.widget-inner -->
+                        </div> <!-- /.widget-main -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+			</div> <!-- /.col-md-8 -->
+
+			<div class="col-md-4">
+				<div class="sidebar">
+					<div class="sidebar-widget">
+						<h5 class="widget-title">Recent Posts</h5>
+						<h6 class="widget-title">Firmware and frp bypass files.</h6>
+						
+						<div class="last-post clearfix">
+							<div class="thumb pull-left">
+								<a href="#"><img src="/images/8NjVfJcFVUpeEcMAIiJpTYtqesc_yfaIaHF.jpg" alt=""></a>
+								<span>24 February 2084</span>
+								<h4><a href="#">phone: SAMSUNG</a></h4>
+								<h5>model: s6-edge</h5>
+							</div>
+							
+						</div> <!-- /.last-post -->
+						
+						<div class="last-post clearfix">
+							<div class="thumb pull-left">
+								<a href="#"><img src="/images/8TbVNqbIaMSRCfRxYDzpaYFIkBs_RQcQgnf.jpg" alt=""></a>
+								<span>24 February 2084</span>
+								<h4><a href="#">phone: TECNO</a></h4>
+								<h5>model: y6</h5>
+							</div>
+							
+						</div> <!-- /.last-post -->
+						
+					</div> <!-- /.sidebar-widget -->
+					<div class="sidebar-widget">
+						<h5 class="widget-title">Categories</h5>
+						<div class="row categories">
+							<div class="col-md-4">
+								<ul>
+									<li><a href="#">Standard</a></li>
+									<li><a href="#">Audio</a></li>
+									<li><a href="#">Video</a></li>
+									<li><a href="#">Branding</a></li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul>
+									<li><a href="#">iOS Design</a></li>
+									<li><a href="#">Business</a></li>
+								</ul>
+							</div>
+						</div> <!-- /.row -->
+					</div> <!-- /.sidebar-widget -->
+					
+				</div> <!-- /.sidebar -->
+			</div> <!-- /.col-md-4 -->
+
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->	
+
+
+
+
+
+	
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="footer-nav clearfix">
+						<ul class="footer-menu">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Shortcodes</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul> <!-- /.footer-menu -->
+					</nav> <!-- /.footer-nav -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<p class="copyright-text">Copyright &copy; 2084 Company Name 
+                    | Design: templatemo</p>
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</footer> <!-- /.site-footer -->
+
+
+
+	<!-- Scripts -->
+	<script src="/static/js/min/plugins.min.js"></script>
+	<script src="/static/js/min/medigo-custom.min.js"></script>
+
+</body>
+</html>

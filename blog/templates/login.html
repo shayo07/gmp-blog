@@ -1,0 +1,73 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block btitle %}
+
+{% endblock %}
+
+
+
+{% block content %}
+
+	<div class="first-widget parallax" id="blog">
+		<div class="parallax-overlay">
+			<div class="container pageTitle">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<h2 class="page-title">LOGIN TO ADMIN PAGE</h2>
+					</div> <!-- /.col-md-6 -->
+					
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.parallax-overlay -->
+	</div> <!-- /.pageTitle -->
+
+	<div class="container  " >	
+			<div class="row">
+				<div class="col-md-12">
+					<div class="comment-form">
+						
+						<div class="widget-inner">
+							<form action="" method="post" enctype="multipart/form-data">	
+								{% csrf_token %}
+							  <div class="row">
+								<div class="col-md-6">
+									<p>
+										<label for="email-id">username:</label>
+										<input type="text" name="username">
+									</p>
+								</div>
+								
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<p>
+										<label for="email-id">password:</label>
+										<input type="password" name="password">
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<button type="submit" style="padding: 9px;">login</button>
+								</div>
+							</div>
+							</form>
+							<div class="row">
+								<div class="col-md-6">
+									<p>
+									<a href="{% url 'reset_password' %}">reset password</a>
+									</p>
+								</div>
+							</div>
+
+						</div> <!-- /.widget-inner -->
+					</div> <!-- /.widget-main -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->	
+
+
+	
+{% endblock %}

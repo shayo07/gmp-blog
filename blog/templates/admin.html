@@ -1,0 +1,362 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block btitle %}
+
+{% endblock %}
+
+
+
+{% block content %}
+
+	<div class="first-widget parallax" id="blog">
+		<div class="parallax-overlay">
+			<div class="container pageTitle">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<h2 class="page-title">ADMIN PAGE</h2>
+					</div> <!-- /.col-md-6 -->
+                    <div class="col-md-6 col-sm-6 text-right">
+						<h2 class="page-title"><a href="{% url 'logout' %}">logout</a></h2>
+					</div> <!-- /.col-md-6 -->
+					
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.parallax-overlay -->
+	</div> <!-- /.pageTitle -->
+
+	<div class="container">	
+		
+        <div class="row">
+			
+
+			<div class="row">
+				<div class="col-md-12  blog-posts">
+					<div class="comment-form">
+						
+						<div class="widget-inner col-md-12">
+							
+
+                            <h3>DEVICES AVAILABLE</h3>
+                                                 <a href="{% url 'add_device' %}">add device</a>       
+                                    <div class="table-responsive " style="overflow-x: auto;">
+                                        <table class="table table-responsive table-borderless">
+                                        <table>
+                                        <tr style="border: solid;">
+                                    
+                                    <th scope="col" width="10%">Device name</th>
+                                    <th scope="col" width="10%">type</th>
+                                    <th scope="col" width="10%">description</th>
+                                    <th scope="col" width="10%">image1</th>
+                                    <th scope="col" width="10%">image2</th>
+                                    <th scope="col" width="10%">edit</th>
+                                    <th scope="col" width="10%">delete</th>
+                                    
+                                    </tr>
+                                    {% for journ in obj %}
+                                <tr style="border: 1px;">
+                                        
+                                        <td>
+                                            {{ journ.name }}
+                                        </td>
+                                        <td>
+                                            {{ journ.type }}
+                                            </td>
+                                            <td>
+                                                {{ journ.description }}
+                                            </td>
+                                            <td>
+                                                {{ journ.image1 }}
+                                            </td>
+                                            <td>
+                                                {{ journ.image2 }}
+                                            </td>
+                                            <td>
+                                                <button style="background-color: orange;"><a href="{% url 'edit_device' pk_test=journ.name %}"  style="color: white;">edit</a></button>
+                                            </td>
+                                        <td>
+                                            <button style="background-color: red;"><a href="{% url 'delete_device' pk_test=journ.name %}" onclick="return confirm('delete this file?')" style="color: white;">delete</a></button>
+                                        </td>
+                                    {% endfor %}
+                                </tr>
+                                </table>
+                                    
+                                </div>
+							
+                                <br>
+
+
+                                <h3>Frp-bypass files</h3>
+                                                <a href="{% url 'add_frp' %}">add frp file</a>        
+                                <div class="table-responsive " style="overflow-x: auto;">
+                                    <table class="table table-responsive table-borderless">
+                                    <table>
+                                    <tr style="border: solid;">
+                                
+                                <th scope="col" width="10%">Device name</th>
+                                <th scope="col" width="10%">link</th>
+                                <th scope="col" width="10%">file</th>
+                                <th scope="col" width="10%">description</th>
+                                <th scope="col" width="10%">installation guide</th>
+                                <th scope="col" width="10%">image1</th>
+                                <th scope="col" width="10%">image2</th>
+                                <th scope="col" width="10%">image3</th>
+                                <th scope="col" width="10%">image4</th>
+                                <th scope="col" width="10%">date posted</th>
+                                <th scope="col" width="10%">edit</th>
+                                <th scope="col" width="10%">delete</th>
+                                
+                                </tr>
+                                {% for journ in obj1 %}
+                            <tr style="border: 1px;">
+                                    
+                                    <td>
+                                        {{ journ.device_name }}
+                                    </td>
+                                    <td>
+                                        {{ journ.link }}
+                                    </td>
+                                    <td>
+                                        {{ journ.file }}
+                                        </td>
+                                        <td>
+                                            {{ journ.description }}
+                                        </td>
+                                        <td>
+                                            {{ journ.installation_guide }}
+                                        </td>
+                                        <td>
+                                            {{ journ.image1 }}
+                                        </td>
+                                        <td>
+                                            {{ journ.image2 }}
+                                        </td>
+                                        <td>
+                                            {{ journ.image3 }}
+                                        </td>
+                                        <td>
+                                            {{ journ.image4 }}
+                                        </td>
+                                        <td>
+                                            {{ journ.date_posted }}
+                                        </td>
+                                        <td>
+                                            <button style="background-color: orange;"><a href="{% url 'edit_frp' pk_test=journ.id %}"  style="color: white;">edit</a></button>
+                                        </td>
+                                    <td>
+                                        <button style="background-color: red;"><a href="{% url 'delete_frp' pk_test=journ.id %}" onclick="return confirm('delete this file?')" style="color: white;">delete</a></button>
+                                    </td>
+                                {% endfor %}
+                            </tr>
+                            </table>
+                                
+                            </div>
+                            <br> 
+
+
+                            <h3>Firmware files</h3>
+                                                <a href="{% url 'add_firm' %}">add firm file</a>        
+                                <div class="table-responsive " style="overflow-x: auto;">
+                                    <table class="table table-responsive table-borderless">
+                                    <table>
+                                    <tr style="border: solid;">
+                                
+                                <th scope="col" width="10%">Device name</th>
+                                <th scope="col" width="10%">link</th>
+                                <th scope="col" width="10%">file</th>
+                                <th scope="col" width="10%">description</th>
+                                <th scope="col" width="10%">installation guide</th>
+                                <th scope="col" width="10%">image1</th>
+                                <th scope="col" width="10%">image2</th>
+                                <th scope="col" width="10%">image3</th>
+                                <th scope="col" width="10%">image4</th>
+                                <th scope="col" width="10%">date posted</th>
+                                <th scope="col" width="10%">edit</th>
+                                <th scope="col" width="10%">delete</th>
+                                
+                                </tr>
+                                {% for journ in obj2 %}
+                            <tr style="border: 1px;">
+                                    
+                                    <td>
+                                        {{ journ.device_name }}
+                                    </td>
+                                    <td>
+                                        {{ journ.link }}
+                                    </td>
+                                    <td>
+                                        {{ journ.file }}
+                                        </td>
+                                        <td>
+                                            {{ journ.description }}
+                                        </td>
+                                        <td>
+                                            {{ journ.installation_guide }}
+                                        </td>
+                                        <td>
+                                            {{ journ.image1 }}
+                                        </td>
+                                        <td>
+                                            {{ journ.image2 }}
+                                        </td>
+                                        <td>
+                                            {{ journ.image3 }}
+                                        </td>
+                                        <td>
+                                            {{ journ.image4 }}
+                                        </td>
+                                        <td>
+                                            {{ journ.date_posted }}
+                                        </td>
+                                        <td>
+                                            <button style="background-color: orange;"><a href="{% url 'edit_firm' pk_test=journ.id %}"  style="color: white;">edit</a></button>
+                                        </td>
+                                    <td>
+                                        <button style="background-color: red;"><a href="{% url 'delete_firm' pk_test=journ.id %}" onclick="return confirm('delete this file?')" style="color: white;">delete</a></button>
+                                    </td>
+                                {% endfor %}
+                            </tr>
+                            </table>
+                                
+                            </div>
+                            <br> 
+
+
+                            <h3>Cracked-tools files</h3>
+                                                <a href="{% url 'add_crack' %}">add cracked-tool file</a>        
+                                <div class="table-responsive " style="overflow-x: auto;">
+                                    <table class="table table-responsive table-borderless">
+                                    <table>
+                                    <tr style="border: solid;">
+                                
+                                <th scope="col" width="10%">Device name</th>
+                                <th scope="col" width="10%">link</th>
+                                <th scope="col" width="10%">file</th>
+                                <th scope="col" width="10%">description</th>
+                                <th scope="col" width="10%">installation guide</th>
+                                <th scope="col" width="10%">image1</th>
+                                <th scope="col" width="10%">image2</th>
+                                <th scope="col" width="10%">image3</th>
+                                <th scope="col" width="10%">image4</th>
+                                <th scope="col" width="10%">date posted</th>
+                                <th scope="col" width="10%">edit</th>
+                                <th scope="col" width="10%">delete</th>
+                                
+                                </tr>
+                                {% for journ in obj3 %}
+                            <tr style="border: 1px;">
+                                    
+                                    <td>
+                                        {{ journ.device_name }}
+                                    </td>
+                                    <td>
+                                        {{ journ.link }}
+                                    </td>
+                                    <td>
+                                        {{ journ.file }}
+                                        </td>
+                                        <td>
+                                            {{ journ.description }}
+                                        </td>
+                                        <td>
+                                            {{ journ.installation_guide }}
+                                        </td>
+                                        <td>
+                                            {{ journ.image1 }}
+                                        </td>
+                                        <td>
+                                            {{ journ.image2 }}
+                                        </td>
+                                        <td>
+                                            {{ journ.image3 }}
+                                        </td>
+                                        <td>
+                                            {{ journ.image4 }}
+                                        </td>
+                                        <td>
+                                            {{ journ.date_posted }}
+                                        </td>
+                                        <td>
+                                            <button style="background-color: orange;"><a href="{% url 'edit_crack' pk_test=journ.id %}"  style="color: white;">edit</a></button>
+                                        </td>
+                                    <td>
+                                        <button style="background-color: red;"><a href="{% url 'delete_crack' pk_test=journ.id %}" onclick="return confirm('delete this file?')" style="color: white;">delete</a></button>
+                                    </td>
+                                {% endfor %}
+                            </tr>
+                            </table>
+                                
+                            </div>
+                            <br>
+
+
+
+                            <h3>Video torrent files</h3>
+                            <a href="{% url 'add_torrent' %}">add torrent file</a>        
+            <div class="table-responsive " style="overflow-x: auto;">
+                <table class="table table-responsive table-borderless">
+                <table>
+                <tr style="border: solid;">
+            
+            <th scope="col" width="10%">Torrent name</th>
+            <th scope="col" width="10%">category</th>
+            <th scope="col" width="10%">year released</th>
+            <th scope="col" width="10%">link</th>
+            <th scope="col" width="10%">file</th>
+            <th scope="col" width="10%">date posted</th>
+            <th scope="col" width="10%">image1</th>
+            <th scope="col" width="10%">edit</th>
+            <th scope="col" width="10%">delete</th>
+            
+            </tr>
+            {% for journ in obj4 %}
+        <tr style="border: 1px;">
+                
+                <td>
+                    {{ journ.video_name }}
+                </td>
+                <td>
+                    {{ journ.category }}
+                    </td>
+                    <td>
+                        {{ journ.year_released }}
+                    </td>
+                    <td>
+                        {{ journ.link }}
+                    </td>
+                    <td>
+                        {{ journ.file }}
+                    </td>
+                    <td>
+                        {{ journ.date_posted }}
+                    </td>
+                    <td>
+                        {{ journ.image1 }}
+                    </td>
+                    <td>
+                        <button style="background-color: orange;"><a href="{% url 'edit_torrent' pk_test=journ.video_name %}"  style="color: white;">edit</a></button>
+                    </td>
+                <td>
+                    <button style="background-color: red;"><a href="{% url 'delete_torrent' pk_test=journ.video_name %}" onclick="return confirm('delete this file?')" style="color: white;">delete</a></button>
+                </td>
+            {% endfor %}
+                        </tr>
+                        </table>
+                            
+                        </div>
+                        <br>
+
+						</div> <!-- /.widget-inner -->
+					</div> <!-- /.widget-main -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->	
+
+
+
+    
+
+
+	
+{% endblock %}
